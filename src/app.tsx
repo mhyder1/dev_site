@@ -1,4 +1,4 @@
-import "./app.css";
+// import "./app.css";
 import navbarlogo from "./assets/img/navbar-logo.svg";
 import portfolio1 from "./assets/img/portfolio/1.jpg";
 import portfolio2 from "./assets/img/portfolio/2.jpg";
@@ -6,10 +6,21 @@ import portfolio3 from "./assets/img/portfolio/3.jpg";
 import portfolio4 from "./assets/img/portfolio/4.jpg";
 import portfolio5 from "./assets/img/portfolio/5.jpg";
 import portfolio6 from "./assets/img/portfolio/6.jpg";
+import about1 from "./assets/img/about/1.jpg";
+import about2 from "./assets/img/about/2.jpg";
+import about3 from "./assets/img/about/3.jpg";
+import about4 from "./assets/img/about/4.jpg";
+import team1 from "./assets/img/about/1.jpg";
+import team2 from "./assets/img/about/2.jpg";
+import team3 from "./assets/img/about/3.jpg";
+import facebook from "./assets/img/logos/facebook.svg";
+import microsoft from "./assets/img/logos/microsoft.svg";
+import google from "./assets/img/logos/google.svg";
+import ibm from "./assets/img/logos/ibm.svg";
 
 export function App() {
   return (
-    <div id="page-top">
+    <div>
       {/* <!-- Navigation--> */}
       <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
         <div class="container">
@@ -283,11 +294,7 @@ export function App() {
           <ul class="timeline">
             <li>
               <div class="timeline-image">
-                <img
-                  class="rounded-circle img-fluid"
-                  src="assets/img/about/1.jpg"
-                  alt="..."
-                />
+                <img class="rounded-circle img-fluid" src={about1} alt="..." />
               </div>
               <div class="timeline-panel">
                 <div class="timeline-heading">
@@ -306,11 +313,7 @@ export function App() {
             </li>
             <li class="timeline-inverted">
               <div class="timeline-image">
-                <img
-                  class="rounded-circle img-fluid"
-                  src="assets/img/about/2.jpg"
-                  alt="..."
-                />
+                <img class="rounded-circle img-fluid" src={about2} alt="..." />
               </div>
               <div class="timeline-panel">
                 <div class="timeline-heading">
@@ -329,11 +332,7 @@ export function App() {
             </li>
             <li>
               <div class="timeline-image">
-                <img
-                  class="rounded-circle img-fluid"
-                  src="assets/img/about/3.jpg"
-                  alt="..."
-                />
+                <img class="rounded-circle img-fluid" src={about3} alt="..." />
               </div>
               <div class="timeline-panel">
                 <div class="timeline-heading">
@@ -352,11 +351,7 @@ export function App() {
             </li>
             <li class="timeline-inverted">
               <div class="timeline-image">
-                <img
-                  class="rounded-circle img-fluid"
-                  src="assets/img/about/4.jpg"
-                  alt="..."
-                />
+                <img class="rounded-circle img-fluid" src={about4} alt="..." />
               </div>
               <div class="timeline-panel">
                 <div class="timeline-heading">
@@ -399,11 +394,7 @@ export function App() {
           <div class="row">
             <div class="col-lg-4">
               <div class="team-member">
-                <img
-                  class="mx-auto rounded-circle"
-                  src="assets/img/team/1.jpg"
-                  alt="..."
-                />
+                <img class="mx-auto rounded-circle" src={team1} alt="..." />
                 <h4>Parveen Anand</h4>
                 <p class="text-muted">Lead Designer</p>
                 <a
@@ -431,11 +422,7 @@ export function App() {
             </div>
             <div class="col-lg-4">
               <div class="team-member">
-                <img
-                  class="mx-auto rounded-circle"
-                  src="assets/img/team/2.jpg"
-                  alt="..."
-                />
+                <img class="mx-auto rounded-circle" src={team2} alt="..." />
                 <h4>Diana Petersen</h4>
                 <p class="text-muted">Lead Marketer</p>
                 <a
@@ -463,11 +450,7 @@ export function App() {
             </div>
             <div class="col-lg-4">
               <div class="team-member">
-                <img
-                  class="mx-auto rounded-circle"
-                  src="assets/img/team/3.jpg"
-                  alt="..."
-                />
+                <img class="mx-auto rounded-circle" src={team3} alt="..." />
                 <h4>Larry Parker</h4>
                 <p class="text-muted">Lead Developer</p>
                 <a
@@ -513,7 +496,7 @@ export function App() {
               <a href="#!">
                 <img
                   class="img-fluid img-brand d-block mx-auto"
-                  src="assets/img/logos/microsoft.svg"
+                  src={microsoft}
                   alt="..."
                   aria-label="Microsoft Logo"
                 />
@@ -523,7 +506,7 @@ export function App() {
               <a href="#!">
                 <img
                   class="img-fluid img-brand d-block mx-auto"
-                  src="assets/img/logos/google.svg"
+                  src={google}
                   alt="..."
                   aria-label="Google Logo"
                 />
@@ -533,7 +516,7 @@ export function App() {
               <a href="#!">
                 <img
                   class="img-fluid img-brand d-block mx-auto"
-                  src="assets/img/logos/facebook.svg"
+                  src={facebook}
                   alt="..."
                   aria-label="Facebook Logo"
                 />
@@ -543,7 +526,7 @@ export function App() {
               <a href="#!">
                 <img
                   class="img-fluid img-brand d-block mx-auto"
-                  src="assets/img/logos/ibm.svg"
+                  src={ibm}
                   alt="..."
                   aria-label="IBM Logo"
                 />
